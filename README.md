@@ -202,12 +202,12 @@ npm run preview
 
 - **Immediate Family:** 4 members (Timothy, Zachary, Father, Mother)
 - **Paternal Line:** 8 members (Aldwin, Eugene, Betty, Jim, Ronnie, Laura, Robert, Tish)
-- **Maternal Line:** 7 members (Grandmothers, Grandfather, Connie, Charlene, Jay, Dave, Hali, Laci)
+- **Maternal Line:** 8 members (Maternal Grandmother, Native American Grandfather, Connie, Charlene, Jay, Dave, Hali, Laci)
 - **Historical Ancestry:** 4 documented lineages (William McCoy, John McCoy, Ian Muiderteach, Lady Ruth le Poer)
 
-**Total Contemporary Family Members Documented:** 19  
+**Total Contemporary Family Members Documented:** 20  
 **Historical Ancestors Documented:** 4  
-**Grand Total:** 23 family members across all generations
+**Grand Total:** 24 family members across all generations
 
 ## External Links
 

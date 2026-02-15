@@ -4,9 +4,9 @@ export const LINKTREE_URL = "https://linktr.ee/christiankota";
 export const HERITAGE_ENGINE_URL = "https://spurlin-dubose-heritage-engine-219296874904.us-west1.run.app/";
 
 export const BIO_SUMMARY = `
-Timothy Christian Spurlin (Christian Kota) is a Polymath, USAF Veteran, and Independent Scholar.
-Operating at the intersection of High-Reliability Software Engineering, Industrial Trades, and Avant-Garde Art.
-Philosophy: "Break Down to Build Up."
+Timothy Christian Spurlin is a Principal Software Architect and Security Engineer.
+He operates at the intersection of high-availability systems, intelligence automation, and secure DevSecOps.
+His career translates kinetic precision (USAF RF Comms, Manufacturing QA) into digital resilience (NIST CSF 2.0, Zero Trust).
 `;
 
 export const TIMELINE: TimelineEvent[] = [
@@ -18,88 +18,53 @@ export const TIMELINE: TimelineEvent[] = [
     verification: "Photographic Record: Aug 2, 1993"
   },
   {
-    year: 1998,
-    title: "The Foster Care Odyssey",
-    description: "Navigated the instability of the system with brother Zachary. From the kindness of Ms. Fern (who sang 'Take Me Out to the Ball Game') and Ms. Reba (who cared for Justin, Antonio, and Mr. Carson) to the abusive environment of Ms. Jeanie & Mr. Jackie. A foundational lesson in adaptation.",
-    category: "survival",
-    verification: "State Records / Personal Testimony"
-  },
-  {
-    year: 2001,
-    title: "The Catalyst (9/11)",
-    description: "Witnessed 9/11 in 3rd Grade (Age 8) in Mr. Key's class at Okapilco/Cox Elementary. The formation of hyper-vigilance via global trauma.",
-    category: "survival",
-    verification: "School Records"
-  },
-  {
     year: 2003,
     title: "The Bootcamp",
-    description: "Lived with Aunt Connie and 'Dave' in Coolidge, GA. Subjected to extreme military-style discipline (standing in corners 30hrs+, water hose drills). Dave, a rattlesnake wrangler and welder, inadvertently installed a 'Navy Seal' operating system of pain tolerance and dissociation.",
+    description: "Lived with Aunt Connie and 'Dave' in Coolidge, GA. Subjected to extreme military-style discipline. Dave, a rattlesnake wrangler and welder, inadvertently installed a 'Navy Seal' operating system of pain tolerance and dissociation.",
     category: "survival",
     verification: "Family Witness Testimony"
   },
   {
-    year: 2004,
-    title: "The Empathy Engine",
-    description: "Willie J. Williams Middle School. Observation of the 'Defeated Coach'. Recognized adult fragility and developed Retrospective Empathy. 'The spark that started it all.'",
-    category: "survival",
-    verification: "Psychological Case Study: 001"
-  },
-  {
-    year: 2007,
-    title: "The Arbitrage Architect",
-    description: "Age 13. Living with Aunt Charlene on Indian Lake. Established global supply chain (AliBaba -> eBay) selling 'clone iPhones' before the official release. Self-taught Java to mod Motorola flip phones.",
-    category: "intel",
-    verification: "Financial Records: eBay/PayPal"
-  },
-  {
-    year: 2009,
-    title: "Sanctuary: Aunt Laura",
-    description: "10th Grade. Lived with Great-Uncle Ronnie and Aunt Laura in Vienna, GA. A period of stability amidst the chaos of adolescence. Shared space with cousin Robert.",
-    category: "survival",
-    verification: "School Records: Vienna, GA"
-  },
-  {
-    year: 2010,
-    title: "The Warrior Phase",
-    description: "Moved to Vienna, GA with Grandma Merle. Massive growth spurt (6ft). Began MMA training (funded by Grandpa Jim). Defeated local bully 'Brandon' with a single karate kick, ending the victim mindset.",
-    category: "survival",
-    verification: "School Records"
-  },
-  {
     year: 2012,
-    title: "USAF Intelligence",
-    description: "Active Duty. Intelligence Analyst (Top Secret/SCI). Stationed at Langley AFB. Managed critical reconnaissance data for the U-2 Dragon Lady.",
+    title: "USAF Intelligence (RF/Network)",
+    description: "Langley AFB. Maintained secure RF communications and network infrastructure (OSI Layers 1-3). Executed diagnostics under stringent availability expectations, forming the foundation for modern Site Reliability Engineering (SRE).",
     category: "intel",
-    verification: "DD-214 Form (Redacted)"
+    verification: "DD-214 / Signal Diagnostics"
+  },
+  {
+    year: 2015,
+    title: "Physical Security Operations",
+    description: "U.S. Security Associates (Colorado State Capitol). Conducted threat modeling, access control monitoring, and incident response. Translated physical perimeter defense into Identity & Access Management (IAM) architectural reasoning.",
+    category: "survival",
+    verification: "U.S. Security Associates Records"
   },
   {
     year: 2017,
-    title: "The Logic of Matter",
-    description: "Crary Industries (North Dakota). Welding & Fabrication. Mastering physical structural integrity. 'The Method to the Madness'.",
+    title: "Manufacturing QA Leadership",
+    description: "TrueNorth Steel / Norwood Sales. Enforced 'spec-first' execution and zero-defect mindsets. Managed precise tolerances and QA gatekeeping, translating directly to CI/CD pipeline rigor, software validation, and safety-critical process control.",
     category: "trades",
-    verification: "Certification: AWS D1.1"
+    verification: "QA Logs / Safety Protocols"
   },
   {
     year: 2019,
     title: "The Invention: TelePrompt Glass",
-    description: "Two weeks after Chat GPT-2 release. Invented the first AI-powered AR Smart Glasses in America. Secured Microsoft Partnership ($150k grant). Built Context-Aware Transcription using Google Maps API and C++.",
+    description: "Invented the first AI-powered AR Smart Glasses in America. Secured Microsoft Partnership ($150k grant). Built Context-Aware Transcription using Google Maps API and C++.",
     category: "intel",
     verification: "Microsoft Partner Portal"
   },
   {
-    year: 2020,
-    title: "Christian Kota",
-    description: "Launch of musical identity. Data-driven songwriting approach. Songs like 'Let It Ride' and 'Beautiful Things'.",
-    category: "art",
-    verification: "Spotify Artist ID: 10113279"
+    year: 2021,
+    title: "Saphyre Solutions (Principal Architect)",
+    description: "Architected compliance-constrained automation platforms for Insurtech. Built multi-step workflows handling sensitive user data (PII/PHI) under HIPAA Security Rule constraints and NIST guidelines.",
+    category: "intel",
+    verification: "Corporate Architecture Docs"
   },
   {
     year: 2024,
-    title: "Global Infrastructure",
-    description: "Building educational platforms for underdeveloped societies. Current Focus: Mandarin, Vietnamese, Russian. Seeking to export the tools of survival (code & language).",
+    title: "National Security Intelligence Tools",
+    description: "Designing ingestion-to-analysis pipelines processing 60,000+ high-priority intelligence targets. Horizontal scalability for mission-interest agencies. Implementing AI fusion and distributed crawling systems.",
     category: "intel",
-    verification: "Current Project Snapshot"
+    verification: "Current Clearance Status"
   }
 ];
 
@@ -188,7 +153,7 @@ export const MEMORY_VIDEOS: MemoryVideo[] = [
     id: "mem-002",
     title: "The Welder's Torch",
     date: "2018",
-    description: "Documentation of TIG welding process at Crary Industries.",
+    description: "Documentation of MIG welding (Pulse & Short Circuit) at Crary Industries.",
     url: "/assets/videos/welding.mp4",
     thumbnail: "/assets/images/welding-thumb.jpg"
   }
@@ -218,10 +183,10 @@ export const MUSIC_TRACKS: Track[] = [
 ];
 
 export const MOCK_COMMITS: GitCommit[] = [
-  { id: '7f3a1b', message: 'feat: implement d3-force genealogy graph', date: '2 hrs ago', repo: 'digital-nervous-system' },
-  { id: '9c2d4e', message: 'fix: hydration error in audio context', date: '5 hrs ago', repo: 'christian-kota-core' },
-  { id: '1a8b3c', message: 'refactor: welding logic migration', date: '1 day ago', repo: 'industrial-iot-monitor' },
-  { id: '4d5e6f', message: 'docs: update source literacy manifesto', date: '2 days ago', repo: 'personal-philosophy' },
+  { id: '7f3a1b', message: 'feat: implement SBOM generation pipeline', date: '2 hrs ago', repo: 'secure-supply-chain' },
+  { id: '9c2d4e', message: 'fix: NIST AI RMF audit logging', date: '5 hrs ago', repo: 'intelligence-fusion-core' },
+  { id: '1a8b3c', message: 'refactor: MITRE ATT&CK mapping logic', date: '1 day ago', repo: 'threat-detection-engine' },
+  { id: '4d5e6f', message: 'docs: update SLSA compliance artifacts', date: '2 days ago', repo: 'infrastructure-as-code' },
 ];
 
 export const GENEALOGY_DATA: GenealogyData = {

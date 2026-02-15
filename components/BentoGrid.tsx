@@ -13,9 +13,11 @@ import {
     Pause,
     ArrowUpRight,
     Link,
-    Glasses
+    Glasses,
+    ExternalLink,
+    Database
 } from 'lucide-react';
-import { BIO_SUMMARY, TIMELINE, MUSIC_TRACKS, MOCK_COMMITS, LINKTREE_URL } from '../constants';
+import { BIO_SUMMARY, TIMELINE, MUSIC_TRACKS, MOCK_COMMITS, LINKTREE_URL, HERITAGE_ENGINE_URL } from '../constants';
 import { useAudio } from './AudioContext';
 import Visualizer from './Visualizer';
 import GenealogyGraph from './GenealogyGraph';
@@ -99,13 +101,31 @@ const BentoGrid: React.FC<BentoProps> = ({ onOpenTerminal, onNavigate }) => {
                             BUILDING GLOBAL INFRASTRUCTURE
                         </span>
                     </div>
-                    <p className="text-gray-400 text-sm font-mono mb-2">
+                    <p className="text-gray-400 text-sm font-mono mb-3">
                         Analyst | Engineer | Tradesman | Artist
                     </p>
-                    <a href={LINKTREE_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[10px] font-mono text-hud-cyan border border-hud-cyan/30 px-2 py-1 rounded bg-hud-cyan/5 hover:bg-hud-cyan/10 transition-colors w-fit">
-                        <Link size={10} />
-                        LINKTREE_CONNECT
-                    </a>
+                    
+                    <div className="flex flex-wrap gap-3">
+                        <a 
+                            href={LINKTREE_URL} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="inline-flex items-center gap-2 text-[10px] font-mono text-black bg-white/80 px-3 py-1.5 rounded hover:bg-white transition-colors"
+                        >
+                            <Link size={12} />
+                            LINKTREE
+                        </a>
+                        <a 
+                            href={HERITAGE_ENGINE_URL} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="inline-flex items-center gap-2 text-[10px] font-mono text-black bg-hud-cyan px-3 py-1.5 rounded font-bold shadow-[0_0_10px_rgba(18,181,203,0.3)] hover:shadow-[0_0_20px_rgba(18,181,203,0.5)] hover:bg-white transition-all"
+                        >
+                            <Database size={12} />
+                            HERITAGE ENGINE
+                            <ExternalLink size={10} />
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -131,7 +151,7 @@ const BentoGrid: React.FC<BentoProps> = ({ onOpenTerminal, onNavigate }) => {
                             {BIO_SUMMARY}
                         </p>
                         <button onClick={() => onNavigate(PageView.BIO)} className="mt-2 text-xs text-hud-cyan hover:underline font-mono">
-                            {'> VIEW FULL DOSSIER'}
+                            > VIEW FULL DOSSIER
                         </button>
                     </div>
                 ) : (
@@ -144,7 +164,7 @@ const BentoGrid: React.FC<BentoProps> = ({ onOpenTerminal, onNavigate }) => {
                             </div>
                         ))}
                          <button onClick={() => onNavigate(PageView.BIO)} className="text-xs text-hud-cyan hover:underline font-mono pl-4">
-                            {'> VIEW FULL TIMELINE'}
+                            > VIEW FULL TIMELINE
                         </button>
                     </div>
                 )}
@@ -240,10 +260,23 @@ const BentoGrid: React.FC<BentoProps> = ({ onOpenTerminal, onNavigate }) => {
         noPadding
         onClick={() => onNavigate(PageView.GENEALOGY)}
       >
-         <div className="h-full relative pointer-events-none">
+         <div className="h-full relative">
             <GenealogyGraph allowFullScreen={false} />
-            <div className="absolute bottom-4 right-4 bg-black/80 px-2 py-1 rounded text-xs text-hud-cyan font-mono z-10">
-                {'> EXPAND GRAPH'}
+            <div className="absolute bottom-4 right-4 z-10 flex gap-2">
+                <div className="bg-black/80 px-2 py-1 rounded text-xs text-hud-cyan font-mono border border-white/20">
+                    > EXPAND GRAPH
+                </div>
+                <a 
+                    href={HERITAGE_ENGINE_URL} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()} // Prevent card navigation
+                    className="bg-hud-cyan text-black px-3 py-1 rounded text-xs font-mono font-bold flex items-center gap-2 shadow-[0_0_10px_rgba(18,181,203,0.3)] hover:shadow-[0_0_20px_rgba(18,181,203,0.5)] hover:bg-white transition-all"
+                >
+                    <Database size={10} />
+                    LAUNCH ENGINE
+                    <ExternalLink size={10} />
+                </a>
             </div>
          </div>
       </BentoCard>
@@ -255,7 +288,7 @@ const BentoGrid: React.FC<BentoProps> = ({ onOpenTerminal, onNavigate }) => {
              <div className="h-1/2 relative group border-b border-white/10 cursor-default">
                  <img src="https://picsum.photos/seed/weld1/400/600" className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500" />
                  <div className="absolute bottom-0 left-0 p-2 bg-black/80 w-full">
-                     <p className="font-mono text-[10px] text-hud-cyan">TIG WELDING / 308L</p>
+                     <p className="font-mono text-[10px] text-hud-cyan">MIG WELDING / PULSE & SHORT CIRCUIT</p>
                  </div>
              </div>
              
@@ -287,7 +320,7 @@ const BentoGrid: React.FC<BentoProps> = ({ onOpenTerminal, onNavigate }) => {
       <BentoCard className="md:col-span-1 md:row-span-1 group cursor-pointer" title="System Root" icon={<TerminalIcon size={14}/>}>
          <div onClick={onOpenTerminal} className="h-full flex flex-col items-center justify-center text-center hover:bg-green-900/10 transition-colors rounded">
             <TerminalIcon size={40} className="text-gray-600 group-hover:text-green-500 mb-2 transition-colors" />
-            <span className="font-mono text-xs text-gray-500 group-hover:text-green-500">{'> ACCESS TERMINAL'}</span>
+            <span className="font-mono text-xs text-gray-500 group-hover:text-green-500">> ACCESS TERMINAL</span>
          </div>
       </BentoCard>
 

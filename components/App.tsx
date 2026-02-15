@@ -5,9 +5,9 @@ import BioPage from './components/BioPage';
 import GenealogyPage from './components/GenealogyPage';
 import EngineeringPage from './components/EngineeringPage';
 import { AudioProvider } from './components/AudioContext';
-import { Globe, LayoutGrid, User, GitBranch, Cpu, ChevronLeft, ExternalLink } from 'lucide-react';
+import { Globe, LayoutGrid, User, GitBranch, Cpu, ChevronLeft, ExternalLink, Database } from 'lucide-react';
 import { PageView } from './types';
-import { LINKTREE_URL } from './constants';
+import { LINKTREE_URL, HERITAGE_ENGINE_URL } from './constants';
 
 function App() {
   const [showTerminal, setShowTerminal] = useState(false);
@@ -35,7 +35,7 @@ function App() {
            </div>
 
            {/* Navigation Bar */}
-           <nav className="flex items-center gap-1 md:gap-6">
+           <nav className="flex items-center gap-1 md:gap-4">
               {currentPage !== PageView.HOME && (
                  <button onClick={() => navigateTo(PageView.HOME)} className="flex items-center gap-1 text-xs font-mono text-gray-400 hover:text-white mr-2">
                     <ChevronLeft size={14} /> BACK
@@ -70,6 +70,19 @@ function App() {
               >
                   <Cpu size={20} />
               </button>
+
+              {/* External Heritage Engine Link */}
+              <a 
+                href={HERITAGE_ENGINE_URL}
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="ml-2 flex items-center gap-2 bg-hud-cyan/10 border border-hud-cyan/50 text-hud-cyan px-3 py-1.5 rounded hover:bg-hud-cyan hover:text-black transition-all group"
+                title="Launch Heritage Engine"
+              >
+                 <Database size={16} />
+                 <span className="hidden lg:inline text-xs font-bold font-mono">HERITAGE ENGINE</span>
+                 <ExternalLink size={12} className="opacity-50 group-hover:opacity-100" />
+              </a>
            </nav>
         </header>
 

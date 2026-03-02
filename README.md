@@ -67,21 +67,21 @@ flowchart TB
 mindmap
   root((Lineage Pillars))
     France["🇫🇷 France — DuBose & Couillandeau"]
-      "Isaac DuBose (b.~1665): fled persecution"
-      "Suzanne Couillandeau: ran Santee plantation 24 yrs"
-      "1665 Dieppe ➜ 1685 Escape ➜ 1718 French Santee"
+      Isaac DuBose (b.~1665): fled persecution
+      Suzanne Couillandeau: ran Santee plantation 24 yrs
+      1665 Dieppe ➜ 1685 Escape ➜ 1718 French Santee
     Ireland["🇮🇪 Ireland — Le Poer (Power)"]
-      "John Power (Baron): estate weakened by illness"
-      "Lady Ruth le Poer: fled 1641 rebellion to Virginia"
-      "Curraghmore House guidance: 'Cousin, not claimant'"
+      John Power (Baron): estate weakened by illness
+      Lady Ruth le Poer: fled 1641 rebellion to Virginia
+      Curraghmore House guidance: 'Cousin, not claimant'
     England["🏴 England — Woodson"]
-      "Sarah Woodson: roasting-spit defense (1644 Massacre)"
-      "Potato Hole son survives → your direct line"
-      "Filter event: near-extinction preserved"
+      Sarah Woodson: roasting-spit defense (1644 Massacre)
+      Potato Hole son survives → your direct line
+      Filter event: near-extinction preserved
     Scotland["🏴 Scotland — MacDonald / McCoy"]
-      "1544 Battle of the Shirts (linen-only combat)"
-      "1800s migration to Georgia pine forests"
-      "1948 Leo McCoy ('Shep' dog story) rural resilience"
+      1544 Battle of the Shirts (linen-only combat)
+      1800s migration to Georgia pine forests
+      1948 Leo McCoy ('Shep' dog story) rural resilience
 ```
 
 ### 3) Migration & survival timeline (`timelineData`)
